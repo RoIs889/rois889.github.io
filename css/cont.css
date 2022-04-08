@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://kit.fontawesome.com/efb72ed663.js');
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+height: 100%;}
+
+body {
+  background-image: url("C:/xampp/htdocs/My portfolio/assets/dark_background.png");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+a, button{
+    font-family: 'Source Code Pro', monospace;
+    color: darkgray;
+	background-color:rgb(24, 37, 52, 0.0);
+    text-decoration:none;
+
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 5%;
+    background-color: rgb(24, 37, 52, 0.2);
+}
+.logo{
+    cursor:pointer;
+    margin-right:auto;
+}
+.logo:hover{
+	font-size:18px;
+	text-transform: uppercase;
+	text-shadow:1px 1px 5px #0000ff;
+	color:#A0AECD;
+}
+button{
+    padding: 7px 5px;
+    font-weight: 300;
+    font-size: 16px;
+	border: none;
+	text-align:center;
+	margin-top:5px;
+    margin-left:10px;
+    border-radius:5px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+#Active {
+    background-color: blue ;
+    }
+    
+#Active::hover{
+    background-color: blue ;
+}
+button:hover{
+    background-color:rgb(24, 37, 52, 0.8);
+	color: gray;
+	font-size:17px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+	
+.fa-regular{
+	margin-right:5px;
+	background-color:#1F3044;
+}
+.fa-solid{
+	margin-right:5px;
+	background-color:#1F3044;
+}
+.fa-moon{
+	margin-right:0px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
