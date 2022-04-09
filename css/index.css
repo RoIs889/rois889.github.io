@@ -3,37 +3,96 @@
   box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
 }
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .column2 {
+      margin-left: 12.5%;
+    width: 75%;
+    padding: 0 10px;
+}
+  
+  .row {
+      align-self: center;
+      justify-content: center;
+      margin: 0 2%;
+      margin-left: 22%;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row2 {margin: 10px 2%;
+margin-left: 22%;}
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card:hover{
+      background-color: #1b315a;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card2:hover{
+      background-color: #1b315a;
+  }
 html {
 height: 100%;}
-
+hr{
+    width: 40%;
+    margin-left: 30%;
+}
 body {
-    background-color:#336b87;
+    background:url('../assets/145.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 a, p, button{
     font-family: 'Source Code Pro', monospace;
-    color:#2a3132;
-	background-color:rgb(24, 37, 52, 0.0);
+    color:#E2DED0;
+	background-color:rgba(184, 187, 190, 0);
     text-decoration:none;
 
 }
 h2{
-    font-family: 'Courier New', Courier, monospace;
-    color: rosybrown;
-    background-color: #763626;
-    text-decoration: underline;
+    font-family:'Source Code Pro', monospace;
+    color: #e2ded0be;
+    background-color: #1b315a;
+    text-decoration: none;
     padding: 0.5%;
     text-align: center;
-    margin-right: 80%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 .name1{
     font-family: 'Josefin Sans', sans-serif ;
     font-weight: 500;
+    font-size: 50px;
     padding-bottom: 2%;
 }
 .job{
     font-family: 'Josefin Sans', sans-serif ;
     font-weight: 400;
+    font-size: 25px;
     padding-bottom: 2%;
 }
 .res{
@@ -49,10 +108,10 @@ h2{
     font-size: 18px;
 }
 .astuli{
-    color:rgba(255, 237, 71, 0.507);
+    color:rgba(197, 237, 253, 0.507);
 }
 .astuli:hover{
-    color: #4285f4;
+    color: #6ca1f7;
 }
 .text{
     display: inline-block;
@@ -62,7 +121,8 @@ h2{
 .info{
     display: inline-block;
     padding: 80px;
-    margin-top: 15%;
+    margin-left: 35%;
+    margin-top: 14%;
 }
 .cont{
     margin-left: 50%;
@@ -106,13 +166,21 @@ h2{
     margin: 0;
 }
 .avatar{
-    margin-top: 10rem;
+    margin-top: 15px;
     padding: 2px;
-    margin-left: 25%;
+    margin-left: 15%;
     float: left;
+    position: relative;
     height: 320px;
     border-radius: 5%;
-    background-color:rgb(144, 175, 197);
+    background-color:rgb(235, 235, 235,0.2);
+}
+.lead{
+    padding: 0px;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
+
 }
 header{
     position:fixed;
@@ -121,16 +189,13 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 14px 5%;
-    background-color: rgba(35, 53, 75, 0.8);
+    background-color: rgb(24, 37, 52, 0.8);
     visibility: hidden;
-    transition: ease 0s;
-}
-.inner-header{
+    transition: all ease-out 0s;
 }
 footer{
     position:absolute;
     width: 100%;
-    color: gold;
     text-align: center;
     padding: 20px;
     background-color: rgb(24, 37, 52);
@@ -138,52 +203,72 @@ footer{
 }
 #contact{
     width: 100%;
-    background-color:#336b87;
+    padding: 5%;
+    background-color:#E2DED0;
     
 }
 .inner-contact{
-    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    align-content: flex-end;
+    justify-content: center;
+    text-align: center;
+    background-color:#1b315a;
 }
 #about{
     width: 100%;
-    background-color:#336b87;
-    
+    padding: 5%;
+    background-color:#E2DED0;
 }
 .inner-about{
-    padding: 10%;
+    display: table;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color:#1b315a;
 }
 #skills{
     width: 100%;
-    padding: 10%;
-    background-color:#336b87;
-    
+    padding: 5%;
+    background-color:#E2DED0;
 }
 .inner-skills{
-    padding-top:5%;
+    text-align: center;
+    padding-top: 2%;
     padding-bottom: 5%;
-    background-color:rgb(144, 175, 197);
-    height: var(fit-content+20%);
+    background-color:#1b315a;
+}
+#projects{
+    width: 100%;
+    padding: 5%;
+    background-color:#E2DED0;
+}
+.inner-projects{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color:#1b315a;
 }
 #services{
     width: 100%;
-    background-color:#336b87;
+    padding: 5%;
+    background-color:#E2DED0;
     
 }
 .inner-services{
-    padding: 10%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color:#1b315a;
 }
 .logo{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: large;
+    font-size: x-large;
     cursor:pointer;
-    color: goldenrod;
+    color: rgb(231, 231, 231);
     margin-right:auto;
     visibility: visible;
 }
 .logo:hover{
-	font-size:18px;
-	text-transform: uppercase;
-	text-shadow:1px 1px 5px #0000ff;
 	color:#A0AECD;
 }
 button{
@@ -205,8 +290,8 @@ button{
     background-color: rgba(86, 86, 90, 0.753) ;
     }
 .buttons:hover{
-    background-color:rgb(24, 37, 52, 0.8);
-	color: gray;
+    background-color:rgba(17, 99, 207, 0.8);
+	color: rgb(0, 0, 0,0.5);
 	font-size:17px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -220,12 +305,14 @@ background: #f1f1f1;
 background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-background: #555;
+background: gray;
 }	
 .fa-regular{
+    margin-left:5px;
 	margin-right:5px;
 }
 .fa-solid{
+    margin-left: 5px;
 	margin-right:5px;
 }
 .fa-moon{
@@ -234,3 +321,11 @@ background: #555;
 .fa-brands{
 	margin-right:15px;
 }
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+  }
