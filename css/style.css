@@ -45,12 +45,13 @@
     color: #1b315a;
     height: auto;
     background-color: #dadada;
+    text-shadow: #888;
   }
   .card p{
       color: #1b315a;
   }
 
-  .card:hover{
+  .card:hover,.card:hover p,.card:hover i{
       background-color: #4285f4;
       color: #dadada;
   }
@@ -67,6 +68,14 @@
     background-color: #4285f4;
     color: #dadada;
   }
+  .card p{
+    color: #1b315a;
+}
+
+.card2:hover,.card2:hover p,.card2:hover i{
+    background-color: #4285f4;
+    color: #dadada;
+}
 html {
 height: 100%;}
 hr{
@@ -74,7 +83,7 @@ hr{
     margin-left: 30%;
 }
 body {
-    background:url('assets/cool-background (5).png');
+    background:url('../assets/cool-background (5).png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -97,17 +106,20 @@ h2{
     margin-left: 30%;
     margin-right: 30%;
 }
+
 .name1{
     font-family: 'Josefin Sans', sans-serif ;
     font-weight: 500;
     font-size: 50px;
     padding-bottom: 2%;
+    color: #dadada;
 }
 .job{
     font-family: 'Josefin Sans', sans-serif ;
     font-weight: 400;
     font-size: 25px;
     padding-bottom: 2%;
+    color: #dadada;
 }
 .res{
     background-color: rgb(6, 10, 59, 1.0);
@@ -223,7 +235,6 @@ footer{
 }
 .inner-contact{
     padding-top: 2%;
-    border-radius: 1%;
     padding-bottom: 5%;
     align-content: flex-end;
     justify-content: center;
@@ -243,6 +254,7 @@ footer{
 .inner-about{
     display: table;
     padding-top: 2%;
+    width: 100%;
     padding-bottom: 5%;
     background-color:#1b315a;
 }
@@ -306,7 +318,7 @@ button{
 .buttons{
     margin-left: 15px;
 }
-#Active {
+.active {
     background-color: rgba(86, 86, 90, 0.753) ;
     }
 .buttons:hover{
@@ -345,9 +357,18 @@ background: gray;
     color: #1b315a;
     font-size:40px ;
 }
-.fa-html5,.fa-css3-alt,.fa-pen,.fa-database,.iconify{
+.fa-html5,.fa-pen,.fa-database,.fa-python{
     color: #1b315a;
     font-size:40px ;
+}
+.iconify{
+    color: #1b315a;
+    font-size:38px ;
+}
+.fa-css3-alt{
+    color: #1b315a;
+    font-size:40px ;
+    margin-left: 2%;
 }
 @media screen and (max-width: 600px) {
     .column {
