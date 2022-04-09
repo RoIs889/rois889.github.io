@@ -371,10 +371,63 @@ background: gray;
     margin-left: 2%;
 }
 @media screen and (max-width: 600px) {
+    body {
+        background:url('../assets/cool-background (5).png');
+        background-size: cover;
+        background-position: 8%;
+        background-repeat: repeat;
+        width: 100%;
+    }
+    h2{
+        width: 50%;
+        font-size: larger;
+    }
+    hr{
+        margin-left:0px ;
+        width: 100%;
+    }
+    .lead{
+        float: none;
+        padding: 5%;
+        width: fit-content;
+        margin-left: 0%;
+    }
+    .avatar{
+
+        padding: 0%;
+        float: none;
+        margin: 2%;
+        margin-left: 20%;
+    }
+    .info{
+        margin: 15%;
+    }
+    .cont{
+        display: inline;
+        margin-left:40%;
+    }
     .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;
     }
+    .column2{
+        margin-left: 0%;
+        width: fit-content;
+    }
+    .row,.row2{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .card2{
+        margin-left: 0%;
+    }
+    .contact-section{
+        float: none;
+        padding: 0%;
+        margin-left: 5%;
+
+    }
+
 
   }
