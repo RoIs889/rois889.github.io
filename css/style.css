@@ -426,8 +426,10 @@ background: gray;
         float: none;
         padding: 0%;
         margin-left: 5%;
-
     }
+	#about{
+	width:100%;
+	}
 
 
   }
